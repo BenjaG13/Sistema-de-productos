@@ -1,0 +1,482 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.fa-arrow-right{
+    color: #fff;
+    transform: var(--transform); 
+    transition: transform .3s;
+    margin-left: 5px;
+    display: block;
+}
+
+
+
+.menu {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a202c;
+    color: #fff;
+    height: 70px;
+}
+.menu_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200xp;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.menu_logo{
+    text-decoration: none;
+    font-size: 28px;
+    color: #fff;
+}
+
+.menu_links{
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+}
+
+.menu_link {
+    color: #fff;
+    margin: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+    .menu_item {
+        list-style: none;
+        position: relative;
+        height: 100%;
+        --clip:  polygon(0 0, 100% 0, 100% 0, 0 0);
+        --transform: rotate(0);
+    }
+    .menu_item:hover{
+        --clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        --transform: rotate(90deg);
+        background: #39308a;
+    }
+
+    .menu_nesting{
+        list-style: none;
+        background-color: #1a202c;
+        transition: clip-path .3s;
+        clip-path: var(--clip);
+        /* position: absolute; */
+        /* right: 0; */
+        /* bottom: 0; */
+        width: max-content;
+        width: 100%;
+        /* transform: translateY(100%); */
+        
+    }
+
+    .menu_link-inside {
+       padding: 10px 0px ;
+       font-size: 17px;
+       width: 100%;
+    }
+
+    .menu_inside:hover{
+        background-color: #39308a;
+
+    }
+    .options {
+        display: flex;
+    }
+        .mi_cuenta{
+            display: block;
+            font-size: 17px;
+            color: #000;
+            text-decoration: none;
+            background-color: aqua;
+            padding: 10px;
+            border-radius: 25px;
+        }
+        .salir{
+            font-size: 17px;
+            color: #000;
+            text-decoration: none;
+            background-color: rgb(211, 10, 10);
+            padding: 10px;
+            border-radius: 20px;
+            margin-left: 20px;
+        }
+    
+    .menu_hamburguer {
+        font-size: 24px;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        cursor: pointer;
+        padding: 0px 15px;
+        display: none;
+    }
+
+    /*      LOGIN     */
+     /* ----------------    */
+
+.login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.login form{
+    background-color: gray;
+    padding: 75px 30px;
+    border-radius: 20px;
+}
+    form h2{
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+    .usuario{
+        margin: 15px 0px;
+        font-size: 20px;
+    }
+    .contra{
+        margin: 10px 0px;
+        font-size: 20px;
+    }
+    input{
+        height: 30px;
+        font-size: 20px;
+        justify-content: center;
+    }
+    .btn{
+        background-color: rgb(7, 17, 150);
+        border-radius: 20px;
+        /* padding: 60xp; */
+        margin-left: 70px;
+        margin-top: 30px;
+        margin-bottom: -20px;
+        height: 40px;
+        width: 120px;
+        font-size: 15px;
+        color: #fff;
+    }
+
+       /*       HOME          */
+       /* -------------------------- */
+
+
+.home{
+    margin: 30px 0px -10px 35px;
+}
+.welcome{
+    margin: 0px 0px 20px 35px;
+}
+
+      /*        ERROR 404        */
+      /* ----------------------------- */
+
+.error_404{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.error_404 h2{
+    margin-right: 105px;
+}   
+
+        /* CARGAR USSUARIO */
+
+/* ---------------------------------------- */
+
+
+.user_new{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_new form {
+    
+    padding: 30px;
+    
+}
+
+.user_new .tittle {
+    text-align: center;
+}
+.casillas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+ .user_new .btn{
+     text-align: center;
+     margin-right: 50%;
+     margin-left: 39%;
+     
+}
+
+      /* CARTEL INFO */
+
+/* ---------------------------- */
+.error{
+    margin: 20px;
+    background-color: rgb(238, 118, 118);
+    display: flex;
+    flex-direction: column;
+    /* width: 800px; */
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+
+}
+.error_text{
+    color: rgb(136, 13, 13);
+
+}
+.error_text strong{
+    margin-top: 20px;
+    margin-bottom: -10px;
+    font-size: 25px;
+}
+.error_text p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.exito{
+    margin: 20px;
+    background-color: rgb(118, 156, 238);
+    display: flex;
+    flex-direction: column;
+    /* width: 800px; */
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+
+}
+.exito_text{
+    color: rgb(33, 4, 161);
+
+}
+.exito_text strong{
+    margin-top: 20px;
+    margin-bottom: -10px;
+    font-size: 25px;
+}
+.exito_text p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* ---------------- LISTA DE USUARIOS ------------- */
+/* ----------------------------------------------- */
+
+.user_list {
+    display: inline-block;
+    width: 95%;
+    margin-left:30px;
+}
+.user_list h1{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+table th{
+    color: #fff;
+    text-align: left;
+    background-color: #1a202c;
+    padding: 10px 10px 10px 0;
+    font-size: 17px;
+}
+table tr:nth-child(odd){
+    background-color: #d4d0d0;
+}
+table td{
+    padding: 10px;
+}
+.user_edit{
+    margin-right: 25px;
+    padding: 7px;
+    color: #0c0b0b;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: rgb(81, 231, 181);
+}
+.user_delete{
+    margin-left: 25px;
+    padding: 7px;
+    color: #0c0b0b;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: rgb(207, 8, 18);
+}
+.no_existen{
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+}
+.recargar{
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #39308a;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+.text_total{
+    margin-top: 50px;
+    margin-left: 25px;
+    display: inline-block;
+    font-size: 20px;
+}
+.paginador{
+    text-decoration: none;
+    padding: 15px;
+    text-align: end;
+
+}
+.paginador a{
+    border: 1px solid #070707;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    color: #000;
+}
+.active{
+    background-color: #39308a;
+
+}
+
+/* ---------BUSCAR USUARIOS--------- */
+/* ------------------------------------- */
+.regXpag{
+    display: inline-block;
+    /* background-color: rgb(255, 0, 200); */
+    margin-bottom: -20px;
+    margin-left: 100px;
+    font-size: 18px;
+    /* margin-top: 50%; */
+    vertical-align: -100px;
+}
+.regXpag select{
+    font-size: 17px;
+    padding: 5px 10px;
+}
+
+
+.buscador {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: -50px;
+    /* background-color: aquamarine; */
+}
+.buscador form{
+    align-self: center;
+    height: 30vh;
+    text-align: center;
+}
+
+.buscador button{
+    padding: 6px;
+    display: inline-block;
+}
+.delete_search{
+    margin-left: 40px;
+}
+.delete_search p{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.delete_search button{
+    border-radius: 10px;
+    background-color: red;
+    padding: 15px;
+    font-size: 13px;
+}
+
+@media all and (max-width:960px) {
+    
+    .menu_hamburguer{
+        display: flex;
+    }
+    .menu_links{
+        background-color: #1a202c;
+        position: fixed;
+        max-width: 400px;
+        top: 70px;
+        bottom: 0;
+        right: 0;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        grid-auto-rows: max-content;
+        grid-template-columns: 500px;
+        grid-template-rows: repeat(4,70px);
+    }
+    .menu_link{
+        height: auto;
+    }
+        .none{
+            display: none;
+        }
+    
+    .menu_nesting{
+        display: flex;
+        flex-direction: column;
+        /* position: unset; */
+        width: 100%;
+        transform: translateY(0);
+        /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); */
+        height: 100%;
+    }
+    .menu_link-inside{
+        width: 90%;
+        margin-left: 40px;
+        border-left: 1px solid #39308a;
+    }    
+    
+    .fa-arrow-right{
+        margin-left: 200px;
+    }
+    
+
+
+    
+}
