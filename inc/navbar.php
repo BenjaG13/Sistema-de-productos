@@ -54,7 +54,7 @@
                 </li>
             </ul>
             <div class="options">
-                <a href="#mi" class="mi_cuenta">Mi Cuenta</a>
+                <a href="index.php?vista=user_update&user_edit=<?php echo $_SESSION['id']  ?>" class="mi_cuenta">Mi Cuenta</a>
                 <a href="#sal" class="salir logout">Salir</a>
             </div>
 

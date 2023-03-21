@@ -431,6 +431,175 @@ table td{
     font-size: 13px;
 }
 
+
+/* -----------USER UPDATE-------- */
+/* ----------------------------------- */
+
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 15px;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    /* margin-bottom: 20px; */
+    color: #000;
+  }
+  
+  .subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    /* margin-bottom: 20px; */
+    color: #000;
+  }
+  
+  .mb-6 {
+    margin-bottom: 6rem !important;
+  }
+  
+  .mt-6 {
+    margin-top: 6rem !important;
+  }
+  
+  .pb-6 {
+    padding-bottom: 6rem !important;
+  }
+  
+  .pt-6 {
+    padding-top: 6rem !important;
+  }
+  
+  .has-text-right {
+    text-align: right;
+  }
+  
+  .pt-4 {
+    padding-top: 4rem !important;
+  }
+  
+  .pb-4 {
+    padding-bottom: 4rem !important;
+  }
+  
+  .button {
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .is-link {
+    background-color: #3273dc;
+    color: #fff;
+  }
+  
+  .is-link:hover {
+    background-color: #2762c6;
+  }
+  
+  .btn-back {
+    font-size: 16px;
+  }
+  
+  .btn-back:hover {
+    text-decoration: underline;
+  }
+  
+  .container .formularioAjax input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  .FormularioAjax label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .column {
+      width: 25%;
+    }
+  }
+  
+  .control {
+    margin-bottom: 20px;
+  }
+  
+  .is-success {
+    background-color: #48c774;
+    color: #fff;
+  }
+  
+  .is-success:hover {
+    background-color: #2f9e62;
+  }
+  
+  .notification {
+    border-radius: 5px;
+    padding: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .is-danger {
+    background-color: #ff3860;
+  }
+  
+  .is-danger:hover {
+    background-color: #d62448;
+  }
+  
+  /* Estilos específicos para este HTML */
+  
+  .FormularioAjax p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .FormularioAjax button {
+    margin-top: 20px;
+  }
+  
+  .notification {
+    display: none;
+  }
+  
+
+
+
 @media all and (max-width:960px) {
     
     .menu_hamburguer{

@@ -39,4 +39,27 @@
 	}
     
 
-    
+    function alertError($prin,$secu){
+        if($prin == ""){
+            $prin = "A ocurrido un error";
+        }
+        echo '
+        <div class="error">
+            <div class="error_text">
+                <strong> '. $prin .' </strong> <br>
+                <p> '.  $secu .'</p>
+            </div>
+        </div>
+        ';
+    }
+
+    function alertExito($prin,$secu){
+        echo '
+        <div class="exito">
+            <div class="exito_text">
+                <strong>'. $prin .'</strong> <br>
+                <p> '.  $secu .'</p>
+            </div>
+        </div>
+     ';
+    }

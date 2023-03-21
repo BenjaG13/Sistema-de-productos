@@ -95,7 +95,7 @@ if ($num_rows > 0) {
         $output['data'] .= '<td>' . $row['usuario_apellido'] . '</td>';
         $output['data'] .= '<td>' . $row['usuario_usuario'] . '</td>';
         $output['data'] .= '<td>' . $row['usuario_email'] . '</td>';
-        $output['data'] .= '<td><a class="user_edit" href="index.php?vista=lista_user&user_edit=' . $row['usuario_id'] . '">Editar</a></td>';
+        $output['data'] .= '<td><a class="user_edit" href="index.php?vista=user_update&user_edit=' . $row['usuario_id'] . '">Editar</a></td>';
         $output['data'] .= "<td ><a class='user_delete' href='index.php?vista=lista_user_acpDEL&user_del=" . $row['usuario_id'] . "'>Eliminar</a></td>";
         $output['data'] .= '</tr>';
     }
